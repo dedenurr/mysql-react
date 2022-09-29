@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.json('herllo this is backend');
 });
 
-// Page Get All Dara
+// Page Get All Data
 app.get('/books', (req, res) => {
   const q = 'SELECT * FROM books';
   db.query(q, (err, data) => {
